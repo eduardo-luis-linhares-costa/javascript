@@ -4,7 +4,7 @@ var estudantes = [{ id: 1, nome: 'João', idade: 20 },{
 
     
 
-const studentId = (id = 10) => {
+const studentId = (id = 4) => {
 return estudantes.find( estudante => estudante.id === id )
 }
 
