@@ -19,7 +19,6 @@ const companies = [
 
     const infoEmpresa = () => companies.map( empresa => `O nome desta empresa é ${empresa.name} e foi fundada em ${empresa.start}`)
     
-
     console.log(infoEmpresa());
 
 
@@ -40,10 +39,11 @@ const { name, category } = companies[0];
 console.log(name, category );
 
 const {address: {street}} = person;
+/* const {street} = person.address; ----- resultado semelhante á linha de cima*/
 
 console.log(street);
 
 
-const empresasbetween = () => companies.map(companie => companie.start > 1996 && companie.start < 2004 ? true : false);
+const empresasbetween = () => companies.map(companie => companie.start > 1996 && companie.start <= 2004 ? true : false);
 
 console.log(empresasbetween())
