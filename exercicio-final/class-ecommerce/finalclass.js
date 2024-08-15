@@ -3,12 +3,14 @@
 class Ecommerce {
 
     constructor(Id, price, name) {
-        this.produtos = [];
+        this.produtos = [],
         this.Id = Id;
         this.price = price;
         this.name = name;
         this.carrinho = [];
     };
+
+    
 
     addProduct(produto) {
         this.produtos.push(produto);
@@ -27,6 +29,8 @@ class Ecommerce {
     getAllProducts() {
         return this.produtos
     }
+
+    //falta um metodo aqui!!!!
 
     getALlProductsNames() {
         return this.produtos.map(p => p.name)
@@ -70,8 +74,8 @@ class Ecommerce {
 const produtosDeRoupa = [
     { id: 1, name: 'calças', price: 50 },
     { id: 2, name: 'camisa', price: 30 },
-    { id: 3, name: 'jaqueta', price: 100 },
-    { id: 4, name: 'shorts', price: 25 },
+    { id: 3, name: 'casaco', price: 100 },
+    { id: 4, name: 'calção', price: 25 },
     { id: 5, name: 'saia', price: 40 }]
 
 const ecommerce = new Ecommerce()

@@ -243,3 +243,25 @@ const yearAnime = (ano) => {
 
 yearAnime(2023) */
 
+
+
+function order(words){
+
+let contador = 1;
+let newQuote = []; 
+
+let word = words.split(' ');
+
+word.map(word => {
+  if (word.includes(contador)) {newQuote.push(word)}
+
+  contador++
+});
+
+return newQuote
+
+}
+
+const x = "is2 Thi1s T4est 3a" 
+
+console.log(order(x))
